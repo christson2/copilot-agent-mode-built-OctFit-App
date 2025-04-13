@@ -7,10 +7,11 @@ In this step, we will accomplish the following:
 - Test the API using curl.
 
 1. Open all files in the `docs` folder and keep this file open in the editor throughout this exercise.
-    1.  agent mode uses `mona-high-school-fitness-tracker.md` and `octofit_story.md` as a reference to create the application
+    1. agent mode uses `mona-high-school-fitness-tracker.md` and `octofit_story.md` as a reference to create the application
 2. Copy and paste the following prompt(s) in the GitHub Copilot Chat and select the "Agent" instead of "Ask" or "Edit" from the drop down where you are inserting the prompt.
 
-> 🪧 **Note:** 
+> 🪧 **Note:**
+
 - Do not change the model from GPT-4o this will be an optional activity at the end of the course.
 - Keep in mind that the Copilot agent mode is conversational so it may ask you questions and you can ask it questions too.
 - Wait a moment for the Copilot to respond and press the continue button to execute commands presented by Copilot agent mode.
@@ -19,7 +20,8 @@ In this step, we will accomplish the following:
 
 ### :keyboard: Activity: Setup Django REST Framework, restart the server, and test the API
 
-> 🪧 **Note:** 
+> 🪧 **Note:**
+
 - Make sure to replace [REPLACE-THIS-WITH-YOUR-CODESPACE-NAME] with your codespace name.
   - ex. redesigned-spork-g6pj46rr9hpp6x
 - You can get the codespace name by running the following command in the terminal: `echo $CODESPACE_NAME`.
@@ -30,8 +32,8 @@ In this step, we will accomplish the following:
 >Based on the example monafit tracker app in the docs/mona-high-school-fitness-tracker.md file and use octofit as the name for Mergington's high school's app. Let's setup codespace for the URL, start the server via VS Code launch.json, and test the API.
 > 
 > 1. Activate the Python virtual environment.
-> 2. Update #file:octofit-tracker/backend/octofit_tracker/views.py to replace the return for the REST API URL endpoints with the codespace URL https://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev for Django and avoid certificate HTTPS issues.
-> 3. Make sure the Django backend works on [REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev and localhost:8000.
+> 2. Update #file:octofit-tracker/backend/octofit_tracker/views.py to replace the return for the REST API URL endpoints with the codespace URL https://[opulent-space-chainsaw-pvx4qwp999ph5r9]-8000.app.github.dev for Django and avoid certificate HTTPS issues.
+> 3. Make sure the Django backend works on [opulent-space-chainsaw-pvx4qwp999ph5r9]-8000.app.github.dev and localhost:8000.
 > 4. Test the API endpoints using curl command.
 > 5. Allow host access to codespace URL and localhost:8000.
 >
@@ -41,11 +43,13 @@ In this step, we will accomplish the following:
 > ❕ **Important:** Don't start the Python Django app in the way that GitHub Copilot agent mode suggests hit **cancel**. Follow the next activity instead.
 
 ### :keyboard: Activity: Start the Python Django app and check the output
+
 Now, let's actually try running the Django application! In the left sidebar, select the `Run and Debug` tab and then press the **Start Debugging** icon.
 
 <img src="https://github.com/user-attachments/assets/baef4dfe-0751-45cb-9e16-8ff26ba9ff58" width=30% height=30%>
 
 > ❕ **Important:**
+
 - Make sure to replace [REPLACE-THIS-WITH-YOUR-CODESPACE-NAME] with your codespace name.
 - ex. redesigned-spork-g6pj46rr9hpp6x
 - You can get the codespace name by running the following command in the terminal: `echo $CODESPACE_NAME`.
