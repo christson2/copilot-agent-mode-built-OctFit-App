@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Workouts.css'; // Import custom CSS for styling
 
 function Workouts() {
     const [workouts, setWorkouts] = useState([]);
@@ -11,26 +12,16 @@ function Workouts() {
     }, []);
 
     return (
-        <div>
+        <div className="workouts-container">
             <h1 className="text-center text-primary">Workouts</h1>
-            <table className="table table-striped table-hover">
-                <thead className="table-dark">
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {workouts.map(workout => (
-                        <tr key={workout.id}>
-                            <td>{workout.id}</td>
-                            <td>{workout.name}</td>
-                            <td>{workout.description}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            <div className="workouts-grid">
+                {workouts.map(workout => (
+                    <div key={workout.id} className="workout-card">
+                        <h2>{workout.name}</h2>
+                        <p>{workout.description}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
